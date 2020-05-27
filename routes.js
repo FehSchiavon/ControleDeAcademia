@@ -4,3 +4,5 @@ const routes = express.Router()
 routes.get('/', function(req, res) {
     return res.send('Bora codar...')
 })
+
+module.exports = routes
