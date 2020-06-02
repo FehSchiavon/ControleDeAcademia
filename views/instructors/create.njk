@@ -2,18 +2,30 @@
 
 {% block content %}
 
-<div class="card">
+<form class="card" method="POST" action="">
     <section 
         class="avatar" 
         style="background: url(https://source.unsplash.com/collection/8353395/500x500) no-repeat center center / cover">
     </section>
     
     <section class="details">
-        <h3>Detalhes</h3>
+        <h3>Novo Instrutor</h3>
+
+        <div class="item">
+            <div>Avatar URL</div>
+            <div>
+                <input 
+                type="url" 
+                name="avatar_url" 
+                >
+            </div>
+        </div>
 
         <div class="item">
             <div>Instrutor</div>
-            <div>Guilherme Saraiva</div>
+            <div>
+                <input type="text" name="" id="">
+            </div>
         </div>
 
         <div class="item">
@@ -40,6 +52,6 @@
         </div>
 
     </section>
-</div>
+</form>
 
 {% endblock content %}
