@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<form class="card" method="POST" action="">
+<form class="card" method="POST" action="/instructors">
     <section 
         class="avatar" 
         style="background: url(https://source.unsplash.com/collection/8353395/500x500) no-repeat center center / cover">
@@ -16,7 +16,8 @@
             <div>
                 <input 
                 type="url" 
-                name="avatar_url" 
+                name="avatar_url"
+                placeholder= "http://"
                 >
             </div>
         </div>
@@ -24,32 +25,44 @@
         <div class="item">
             <div>Instrutor</div>
             <div>
-                <input type="text" name="" id="">
+                <input 
+                    type="text" 
+                    name="name"
+                    placeholder= "Nome do Instrutor"
+                >
             </div>
         </div>
 
         <div class="item">
-            <div>Idade</div>
-            <div>29 Anos</div>
+            <div>Data de nascimento</div>
+            <div>
+                <input 
+                    type="date" 
+                    name="birth" 
+                >
+            </div>
         </div>
 
         <div class="item">
             <div>Sexo</div>
-            <div>Masculino</div>
-        </div>
-
-        <div class="item">
-            <div>Acompanhamento</div>
             <div>
-                <span>Musculação</span>
-                <span>Crossfit</span>
+                <span><input type="radio" name="gender" value="M" checked>Masculino</span>
+                <span><input type="radio" name="gender" value="F">Feminino</span>
             </div>
         </div>
 
         <div class="item">
-            <div>Desde</div>
-            <div>01/01/2019</div>
+            <div>Área de atuação</div>
+            <div>
+                <input 
+                    type="text"
+                    name="services"
+                    placeholder="Separe os serviços prestados por vírgula"
+                >
+            </div>
         </div>
+
+        <button type="submit">Salvar</button>
 
     </section>
 </form>
