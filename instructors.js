@@ -15,10 +15,22 @@ exports.post = function(req, res) {
         }
     }
 
-    req.body.birth = Data.parse()
-    req.body.created_at = Data.now()
+    birth = Date.parse(birth)
+    const created_at = Date.now()
+    const id = Number(data.instructors.length + 1)
 
-    data.instructors.push(req.body) // [{...}, {...}]
+    let { avartar_url, birth, name, services, gender } = req.body
+
+    data.instructors.push({
+        avartar_url,
+        birth,
+        created_at,
+        id,
+        name,
+        gender,
+        services,
+        name
+    })
 
     fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
         if (err) return res.send('Write file error!') 
