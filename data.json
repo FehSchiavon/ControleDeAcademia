@@ -1,0 +1,11 @@
+{
+  "instructors": [
+    {
+      "avatar_url": "https://fundamentosdejavascript.club.hotmart.com/login",
+      "name": "Pedro",
+      "birth": "2020-06-12",
+      "gender": "M",
+      "services": "Worker"
+    }
+  ]
+}
