@@ -15,21 +15,20 @@ exports.post = function(req, res) {
         }
     }
 
-    birth = Date.parse(birth)
+    // birth = Date.parse(birth) // Dando Erro!
     const created_at = Date.now()
     const id = Number(data.instructors.length + 1)
 
     let { avartar_url, birth, name, services, gender } = req.body
 
     data.instructors.push({
-        avartar_url,
-        birth,
-        created_at,
         id,
+        avartar_url,
         name,
+        birth,
         gender,
         services,
-        name
+        created_at
     })
 
     fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
