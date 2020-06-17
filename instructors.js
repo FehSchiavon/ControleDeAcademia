@@ -17,7 +17,7 @@ exports.show = function(req, res) {
         ...foundInstructor,
         age: age(foundInstructor.birth),
         services: foundInstructor.services.split(","),
-        created_at: ""
+        created_at: new Intl.DateTimeFormat("pt-BR").format(foundInstructor.created_at)
     }
 
     return res.render('instructors/show', { instructor })
@@ -37,7 +37,7 @@ exports.post = function(req, res) {
         }
     }
     
-    let { avartar_url, birth, name, services, gender } = req.body
+    let { avatar_url, birth, name, services, gender } = req.body
     
     birth = Date.parse(birth) // Dando Erro!
     const created_at = Date.now()
@@ -46,7 +46,7 @@ exports.post = function(req, res) {
 
     data.instructors.push({
         id,
-        avartar_url,
+        avatar_url,
         name,
         birth,
         gender,
