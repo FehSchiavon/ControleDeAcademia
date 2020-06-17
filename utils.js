@@ -18,12 +18,13 @@ module.exports = {
             const date = new Date(timestamp)
             
             // Year
-            const year = date.getFullYear()
+            const year = date.getUTCFullYear()
             // Month
-            const month = date.getMonth() + 1
+            const month = date.getUTCMonth() + 1
             // Day
-            const day = date.getDate()
+            const day = date.getUTCDate()
 
-            console.log(`${year}-${month}-${day}`)
+            // Year / Month / Day
+            return `${year}-${month}-${day}`
     }
 }
