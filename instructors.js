@@ -1,6 +1,27 @@
 const fs = require('fs')
 const data = require('./data.json')
 
+// Show
+exports.show = function(req, res) {
+    // req.params
+    const { id } = req.params
+
+    const foundInstructor = data.instructors.find(function(instructor) {
+        return  id == instructor.id
+    })
+
+    if(!foundInstructor) return res.send('Instructor not found!')
+
+    const instructor = {
+        ...foundInstructor,
+        age:"",
+        services: foundInstructor.services.split(","),
+        created_at: ""
+    }
+
+    return res.render('instructors/show', { instructor })
+}
+
 // Create
 exports.post = function(req, res) {
     // req.query
@@ -14,12 +35,13 @@ exports.post = function(req, res) {
             return res.send('Please, fill all fields')
         }
     }
-
-    // birth = Date.parse(birth) // Dando Erro!
+    
+    let { avartar_url, birth, name, services, gender } = req.body
+    
+    birth = Date.parse(birth) // Dando Erro!
     const created_at = Date.now()
     const id = Number(data.instructors.length + 1)
 
-    let { avartar_url, birth, name, services, gender } = req.body
 
     data.instructors.push({
         id,
