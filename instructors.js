@@ -103,5 +103,11 @@ exports.put = function(res, res) {
         birth: Date.parse(req.body.birth),
     }
 
-    data.instructors[index]
+    data.instructors[index] = instructor
+
+    fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
+        if(err) return res.send('Write error!')
+
+        return res.redirect(`/instructors/${id}`)
+    })
 }
