@@ -39,7 +39,7 @@ exports.post = function(req, res) {
     
     let { avatar_url, birth, name, services, gender } = req.body
     
-    birth = Date.parse(birth) // Dando Erro!
+    birth = Date.parse(birth) // Corrigido!
     const created_at = Date.now()
     const id = Number(data.instructors.length + 1)
 
@@ -80,4 +80,28 @@ exports.edit = function(req, res) {
     }
 
     return res.render('instructors/edit', { instructor })
+}
+
+// Put
+exports.put = function(res, res) {
+    // req.params
+    const { id } = req.body
+    let index = 0
+
+    const foundInstructor = data.instructors.find(function(instructor, foundIndex) {
+        if (id == instructor.id) {
+            index = foundIndex
+            return true
+        }
+    })
+
+    if(!foundInstructor) return res.send('Instructor not found!')
+
+    const instructor = {
+        ...foundInstructor,
+        ...req.body,
+        birth: Date.parse(req.body.birth),
+    }
+
+    data.instructors[index]
 }
