@@ -22,6 +22,8 @@ routes.post('/instructors', instructors.post)
 
 routes.put('/instructors', instructors.put)
 
+routes.delete('/instructors', instructors.delete)
+
 // HTTP VERBS
 // GET: Receber RESOURCE
 // POST: Criar um novo RESOURCE com dados enviados
