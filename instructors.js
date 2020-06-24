@@ -83,7 +83,7 @@ exports.edit = function(req, res) {
 }
 
 // Put
-exports.put = function(res, res) {
+exports.put = function(req, res) {
     // req.params
     const { id } = req.body
     let index = 0
