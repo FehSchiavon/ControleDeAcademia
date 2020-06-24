@@ -1,14 +1,6 @@
 {
   "instructors": [
     {
-      "id": 1,
-      "name": "Felipe",
-      "birth": "2020-06-03",
-      "gender": "M",
-      "services": "Developer, Fullstack",
-      "created_at": 1591700940395
-    },
-    {
       "id": 2,
       "name": "Felipe",
       "birth": 1591920000000,
@@ -42,10 +34,10 @@
       "created_at": 1592392354511
     },
     {
-      "id": 6,
+      "id": "6",
       "avatar_url": "https://source.unsplash.com/collection/8353395/500x500",
-      "name": "Guilherme Saraiva",
-      "birth": 754012800000,
+      "name": "Guilherme Saraiva Fora",
+      "birth": 659318400000,
       "gender": "M",
       "services": "Crossfit",
       "created_at": 1592392475270
