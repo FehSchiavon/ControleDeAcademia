@@ -14,7 +14,10 @@
         <tbody> {# Corpo da Tabela #}
             {% for instructor in instructors %}
                 <tr> {# Linha #}
-                    <td>{{ instructor.name }}</td> {# Colunas #}
+                    <td>
+                        <span style="background-image: url({{instructor.avatar_url}})"></span>
+                        {{ instructor.name }}
+                    </td> {# Colunas #}
                     <td>{{ instructor.services }}</td>
                     <td><a href="/instructors/{{instructor.id}}">ver</a></td>
                 </tr>

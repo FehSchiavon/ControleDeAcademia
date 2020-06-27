@@ -1,28 +1,13 @@
 {
   "instructors": [
     {
-      "id": 2,
-      "name": "Felipe",
-      "birth": 1591920000000,
-      "gender": "M",
-      "services": "Crossfit",
-      "created_at": 1591726226210
-    },
-    {
-      "id": 3,
-      "name": "Casa Reciclar",
-      "birth": 1592524800000,
-      "gender": "F",
-      "services": "Crossfit",
-      "created_at": 1592390889346
-    },
-    {
       "id": 4,
       "name": "Guilherme Saraiva",
       "birth": 1575504000000,
       "gender": "M",
       "services": "Crossfit",
-      "created_at": 1592392275940
+      "created_at": 1592392275940,
+      "avatar_url": "https://source.unsplash.com/collection/8353395/500x500"
     },
     {
       "id": 5,
