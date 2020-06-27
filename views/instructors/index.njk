@@ -8,6 +8,7 @@
             <tr> {# Linha #}
                 <th>Instructor</th> {# Colunas #}
                 <th>Atendimento</th> {# Colunas #}
+                <th>Ação</th> {# Colunas #}
             </tr>
         </thead>
         <tbody> {# Corpo da Tabela #}
@@ -15,6 +16,7 @@
                 <tr> {# Linha #}
                     <td>{{ instructor.name }}</td> {# Colunas #}
                     <td>{{ instructor.services }}</td>
+                    <td><a href="/instructors/{{instructor.id}}">ver</a></td>
                 </tr>
             {% endfor %}
         </tbody>
