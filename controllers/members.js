@@ -6,7 +6,6 @@ const { age, date } = require('./utils')
 exports.index = function(req, res) {
     return res.render('members/index', { members: data.members })
 }
-
 // Show
 exports.show = function(req, res) {
     // req.params
@@ -25,8 +24,11 @@ exports.show = function(req, res) {
 
     return res.render('members/show', { member })
 }
-
 // Create
+exports.create = function(req, res) {
+    return res.render('members/create')
+}
+// Post
 exports.post = function(req, res) {
     // req.query
     // req.body
@@ -65,7 +67,6 @@ exports.post = function(req, res) {
 
     // return res.send(req.body)
 }
-
 // Edit
 exports.edit = function(req, res) {
     // req.params
@@ -84,7 +85,6 @@ exports.edit = function(req, res) {
 
     return res.render('members/edit', { member })
 }
-
 // Put
 exports.put = function(req, res) {
     // req.params
@@ -115,7 +115,6 @@ exports.put = function(req, res) {
         return res.redirect(`/members/${id}`)
     })
 }
-
 // Delete
 exports.delete = function(req, res) {
     const { id } = req.body
