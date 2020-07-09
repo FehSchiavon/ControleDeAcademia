@@ -9,15 +9,15 @@
 <p align="center">
 
   <a href="https://rocketseat.com.br">
-    <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%23F8952D">
+    <img alt="Made by Rocketseat" src="">
   </a>
 
   <a href="./LICENSE" >
     <img alt="License" src="https://img.shields.io/badge/license-MIT-%23F8952D">
   </a>
   
-  <a href="https://www.linkedin.com/in/diegyohoho/" >
-    <img alt="My Linkedin" src="https://img.shields.io/badge/-diegyohoho-%230077B5?style=social&logo=linkedin">
+  <a href="https://www.linkedin.com/in//" >
+    <img alt="My Linkedin" src="">
   </a>
 
 </p>
@@ -80,7 +80,7 @@ npm install
 npm start
 ```
 
-###### Código [aqui](https://github.com/diegyohoho/launchbase-04-gym-manager/tree/master/gym-manager)!
+###### Código [aqui](https://github.com//launchbase)!
 
 ## Licença
 
