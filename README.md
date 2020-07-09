@@ -16,14 +16,14 @@
     <img alt="License" src="https://img.shields.io/badge/license-MIT-%23F8952D">
   </a>
   
-  <a href="https://www.linkedin.com/in//" >
-    <img alt="My Linkedin" src="">
+  <a href="https://www.linkedin.com/in/felipeschiavon/" >
+    <img alt="Linkedin" src="">
   </a>
 
 </p>
 
 <p align="center">
-  <a href="https://github.com/diegyohoho/launchbase-04">Início</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/FehSchiavon/ControleDeAcademia">Início</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#desafios">Desafios</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#licença">Licença</a>
 </p>
