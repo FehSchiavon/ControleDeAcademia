@@ -7,8 +7,3 @@ for (item of menuItems) {
     }
 }
 
-// console.log("/instructors/2".includes(instructor))
-
-// item.getAttribute("href").includes()
-
-// console.log(currentPage)
