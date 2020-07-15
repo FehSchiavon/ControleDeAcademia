@@ -42,12 +42,24 @@ exports.post = function(req, res) {
         }
     }
     
-    let { avatar_url, birth, name, services, gender } = req.body
+    let { 
+        avatar_url, 
+        birth, 
+        name, 
+        email, 
+        gender,
+        blood,
+        weight,
+        height 
+    } = req.body
     
     birth = Date.parse(birth) // Corrigido!
-    const created_at = Date.now()
-    const id = Number(data.members.length + 1)
-
+    const id = 1
+    const lastId = data.members[data.members.length -1].id
+    
+    if (!lastId) {
+       id = lastId + 1 
+    }
 
     data.members.push({
         id,
