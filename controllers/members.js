@@ -42,18 +42,7 @@ exports.post = function(req, res) {
         }
     }
     
-    let { 
-        avatar_url, 
-        birth, 
-        name, 
-        email, 
-        gender,
-        blood,
-        weight,
-        height 
-    } = req.body
-    
-    birth = Date.parse(birth) // Corrigido!
+    birth = Date.parse(req.body.birth) // Corrigido!
     const id = 1
     const lastId = data.members[data.members.length -1].id
     
@@ -62,13 +51,9 @@ exports.post = function(req, res) {
     }
 
     data.members.push({
+        ...req.body,
         id,
-        avatar_url,
-        name,
-        birth,
-        gender,
-        services,
-        created_at
+        birth
     })
 
     fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
