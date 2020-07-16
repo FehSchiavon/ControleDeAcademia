@@ -51,8 +51,8 @@ exports.post = function(req, res) {
     }
 
     data.members.push({
-        ...req.body,
         id,
+        ...req.body,
         birth
     })
 
