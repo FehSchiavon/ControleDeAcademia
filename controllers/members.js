@@ -58,9 +58,19 @@ exports.show = function(req, res) {
     const converterBlood = data.members.find(function(member) {
         if ('A1' == member.blood) {
             member.blood = 'A+'
-        } else if ('A' == member.blood) {
-
-        }
+        } else if ('A0' == member.blood) {
+            member.blood = 'A-'
+        } else if ('B1' == member.blood) {
+            member.blood = 'B+'
+        } else if ('B2' == member.blood) {
+            member.blood = 'B-'
+        } else if ('AB1' == member.blood) {
+            member.blood = 'AB+'
+        } else if ('O1' == member.blood) {
+            member.blood = 'O+'
+        } else if ('O0' == member.blood) {
+            member.blood = 'O-'
+        } 
     })
 
     if(!foundMember) return res.send('Member not found!')
