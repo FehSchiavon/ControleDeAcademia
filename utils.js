@@ -25,6 +25,6 @@ module.exports = {
             const day = `0${date.getUTCDate()}`.slice(-2)
 
             // Year / Month / Day
-            return `${year}-${month}-${day}`
+            return `${year}-${month}-${day}` // Tipo ISO
     }
 }
