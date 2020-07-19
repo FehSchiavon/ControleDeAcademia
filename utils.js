@@ -25,6 +25,12 @@ module.exports = {
             const day = `0${date.getUTCDate()}`.slice(-2)
 
             // Year / Month / Day
-            return `${year}-${month}-${day}` // Tipo ISO
+            return {
+                day,
+                month,
+                year,
+                iso: `${year}-${month}-${day}`,
+                birthDate: `${day}/${month}/`
+            } // Tipo ISO
     }
 }
