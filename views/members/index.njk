@@ -8,7 +8,9 @@
         <thead> {# Cabeçalho #}
             <tr> {# Linha #}
                 <th>Membro</th> {# Colunas #}
-                <th>Atendimento</th> {# Colunas #}
+                <th>Email</th> {# Colunas #}
+                <th>Peso</th> {# Colunas #}
+                <th>Altura</th> {# Colunas #}
                 <th>Ação</th> {# Colunas #}
             </tr>
         </thead>
@@ -19,7 +21,9 @@
                         <span style="background-image: url({{member.avatar_url}})"></span>
                         {{ member.name }}
                     </td> {# Colunas #}
-                    <td>{{ member.services }}</td>
+                    <td>{{ member.email }}</td>
+                    <td>{{ member.weight }}kg</td>
+                    <td>{{ member.height }}cm</td>
                     <td><a href="/members/{{member.id}}">ver</a></td>
                 </tr>
             {% endfor %}

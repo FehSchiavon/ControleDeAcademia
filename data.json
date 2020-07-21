@@ -10,6 +10,28 @@
       "blood": "AB1",
       "weight": "50",
       "height": "99"
+    },
+    {
+      "id": 1,
+      "avatar_url": "https://source.unsplash.com/collection/8353395/500x500",
+      "name": "Guilherme Saraiva",
+      "email": "felipschiavon@gmail.com",
+      "birth": 638841600000,
+      "gender": "M",
+      "blood": "O1",
+      "weight": "66",
+      "height": "135"
+    },
+    {
+      "id": 1,
+      "avatar_url": "https://source.unsplash.com/collection/8353395/500x500",
+      "name": "Junior",
+      "email": "felipschiavon@gmail.com",
+      "birth": 659318400000,
+      "gender": "F",
+      "blood": "B1",
+      "weight": "322",
+      "height": "113"
     }
   ],
   "instructors": [
