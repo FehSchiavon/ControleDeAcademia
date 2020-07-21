@@ -28,7 +28,7 @@ exports.post = function(req, res) {
     const id = 1
     const lastMember = data.members[data.members.length -1]
     
-    if (!lastMember) {
+    if (lastMember) {
        id = lastMember + 1 
     }
 
@@ -77,7 +77,7 @@ exports.show = function(req, res) {
 
     const member = {
         ...foundMember,
-        birth: age(foundMember.birth).birthDay,
+        birth: date(foundMember.birth).birthDay
     }
     console.log(member)
 
