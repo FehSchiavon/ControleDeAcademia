@@ -21,10 +21,6 @@
   <a href="#licença">Licença</a>
 </p>
 
-<div align="center">
-    <img alt="Exemplo" src="previews/preview-8.gif" width="100%" />
-</div>
-
 #### CSS Responsive
 <!--
 <div align="center">
