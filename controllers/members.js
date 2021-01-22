@@ -66,6 +66,8 @@ exports.show = function(req, res) {
             member.blood = 'B-'
         } else if ('AB1' == member.blood) {
             member.blood = 'AB+'
+        } else if ('AB0' == member.blood) {
+            member.blood = 'AB-'
         } else if ('O1' == member.blood) {
             member.blood = 'O+'
         } else if ('O0' == member.blood) {
